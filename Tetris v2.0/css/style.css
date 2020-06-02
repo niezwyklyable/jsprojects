@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey; /* domyslny: #f6f6f6 */
+    user-select: none;
+}
+
+#legend {
+    border: 2px solid #111;
+    width: 346px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+    font-size: 25px;
+    padding: 25px;
+    background-color: slategrey;
+    float: left;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 304px; /* + 2 x 2px szerokosci borderu canvasa */
+    float: left;
+}
+
+#score {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    background-color: slategrey;
+    border: 2px solid #111;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#game {
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #111;
+}
+
+#side {
+    border: 2px solid #111;
+    width: 154px;
+    margin-left: 100px;
+    margin-top: 80px;
+    padding: 25px;
+    background-color: slategrey;
+    float: left;
+}
+
+#caption {
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+#nextFigure {
+    display: block;
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #111;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tetris by AW v2.0</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div id="legend">
+
+        <b>Controls:</b> <br /><br />
+        Left Arrow / A - Move Left <br />
+        Right Arrow / D - Move Right <br />
+        Up Arrow / W - Rotation <br />
+        Down Arrow / S - Soft Drop <br />
+        Space - Hard Drop <br />
+        C - Hold (current figure)
+
+    </div>
+
+    <div id="container">
+
+        <div id="score">0</div>
+        <canvas id="game" width="300" height="600" />
+
+    </div>
+
+    <div id="side">
+
+        <div id="caption"><b>Next: </b></div>
+        <canvas id="nextFigure" width="150" height="180" />
+
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <script src="js/input.js"></script>
+    <script src="js/physics.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/figure.js"></script>
+    <script src="js/rotation.js"></script>
+    <script src="js/ghostPosY.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/Y.js"></script>
+    <script src="js/engine.js"></script>
+
+</body>
+</html>
