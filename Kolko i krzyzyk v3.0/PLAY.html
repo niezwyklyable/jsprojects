@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <title>Kółko i krzyżyk by AW v3.0</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="game">
+
+            <div class="field" id="box1" onclick="clickBox(1)"></div>
+            <div class="field" id="box2" onclick="clickBox(2)"></div>
+            <div class="field" id="box3" onclick="clickBox(3)"></div>
+            <div style="clear: both;"></div>
+
+            <div class="field" id="box4" onclick="clickBox(4)"></div>
+            <div class="field" id="box5" onclick="clickBox(5)"></div>
+            <div class="field" id="box6" onclick="clickBox(6)"></div>
+            <div style="clear: both;"></div>
+
+            <div class="field" id="box7" onclick="clickBox(7)"></div>
+            <div class="field" id="box8" onclick="clickBox(8)"></div>
+            <div class="field" id="box9" onclick="clickBox(9)"></div>
+            <div style="clear: both;"></div>
+
+        </div>
+
+        <div id="bottom">
+
+            <div id="caption">
+                Turn:
+            </div>
+
+            <div id="turn"></div>
+
+            <div style="clear: both;"></div>
+
+            <div id="caption2">
+                Change level:
+            </div>
+
+            <div id="levels">
+
+                <fieldset>
+
+                    <div><label><input type="radio" value="1" name="switch" class="level" onclick="load('easy')" />EASY</label></div>
+                    <div><label><input type="radio" value="2" name="switch" class="level" onclick="load('medium')" checked />MEDIUM</label></div>
+                    <div><label><input type="radio" value="3" name="switch" class="level" onclick="load('impossible')" />IMPOSSIBLE</label></div>
+                    <div><label><input type="radio" value="4" name="switch" class="level" onclick="load('friend')" />2 PLAYERS</label></div>
+
+
+                </fieldset>
+
+            </div>
+
+            <div id="button">
+                <input type="button" value="PLAY AGAIN" onclick="load(level)" />
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- musi byc na koncu aby uchwyty do divow dzialaly -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/engine.js"></script>
+
+</body>
+</html>
